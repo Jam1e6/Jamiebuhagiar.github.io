@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <style>
+        #more {display: none;}
+        </style>
+</head>
+<body>
+<h1>My Portofolio</h1>
+<p>Hey there! I'm Jamie, a passionate and hardworking individual currently studying iGaming<span id="dots">...</span><span id="more"> 
+With a keen interest in the ever-evolving gaming industry, I'm eager to explore the dynamic world of online gaming, casino operations, and digital entertainment.
+Beyond my studies, I'm an avid football fan and gamer, always looking for new experiences both on the pitch and on the screen. 
+Whether it's strategizing in a game or cheering for my favorite team, I bring the same level of enthusiasm and dedication to everything I do.
+</span></p>
+
+<button onclick="myFunction()" id="myBtn">Read more</button>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+</body>
+</html>
